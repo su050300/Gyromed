@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <title>
+     Gyromed
+ 	 </title>
+  <src type="text/css" rel="stulesheet" hreftype="home.css">
+  <meta name="keyword" content="">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="typeahead.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $('input.typeahead').typeahead({
+        name: 'typeahead',
+        remote:'search.php?key=%QUERY',
+        limit : 10
+    });
+});
+    </script>
+    <style type="text/css">
+.bs-example{
+  font-family: sans-serif;
+ position:relative;
+ padding:5% 0 0 3%; 
+
+}
+.row{
+     border-style:groove;
+     margin:8% 15% 0% 15%;
+     background-color:white;
+}
+.som{
+  color:black;
+  font-size:25px;
+}
+.button{
+   background-color:#4caf50;
+   border:none;
+   color:white;
+   padding:15px 32px;
+   text-align:center;
+   display:inline-block;
+   font-size:16px;
+   margin:4px 2px;
+   cursor:pointer;
+   position:relative;
+   top:-80px;
+   left:500px;
+}
+.but{
+   background-color:#4caf50;
+   border:none;
+   color:white;
+   padding:15px 32px;
+   text-align:center;
+   display:inline-block;
+   font-size:16px;
+   margin:4px 2px;
+   cursor:pointer;
+   float:right;
+}
+.typeahead, .tt-query, .tt-hint {
+  border-style:groove;
+  font-size: 18px;
+  height: 60px;
+  line-height: 18px;
+  outline: medium none;
+  padding: 8px 12px;
+  width: 396px;
+}
+.typeahead {
+  background-color: #FFFFFF;
+}
+.typeahead:focus {
+  border: 2px solid #0097CF;
+}
+.tt-query {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+  color: #999999;
+}
+.tt-dropdown-menu {
+  background-color: #000000;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 12px;
+  padding: 8px 0;
+  width: 422px;
+}
+.tt-suggestion {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+  background-color: #0097CF;
+  color: #FFFFFF;
+}
+.tt-suggestion p {
+  margin: 0;
+}
+</style>
+ </head>
+ <body>
+<style>
+body
+{
+  background-color:#eeffff;
+  background-position:fixed;
+}
+div a{
+     text-decoration:none;
+ }
+div a:hover{
+     background-color:rgb(180,180,180);
+     text-decoration:none;
+ }
+div a:active{
+     background-color:#3bc371;
+}
+.log{
+  position: relative;
+  left:1220px;
+  top:14px;
+  font-size:20px;
+  color:#00b3b3;
+  background-color:#b3ffff;
+  border:none;
+}
+.titl a{
+	   position:relative;
+	   left:600px;
+	   top:14px;
+	   color:#00b3b3;
+	   font-size:25px;
+}
+.title a:hover{
+
+}
+.movesi{
+	cursor: pointer;
+	position:relative;
+	top:14px;
+	left:14px;
+	font-size:20px;
+    color:#00b3b3;
+}
+.icon{
+	  position:absolute;
+	  top:0;
+	  right:25px;
+	  font-size:30px;
+	  margin-left:50px;
+}
+.bar{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+	width:0;
+	position:fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color:#f4f7f6;
+	overflow-x:hidden;
+	padding-top:60px ;
+	transition:0.5s;
+	border:inline;
+        font-size:18px;
+}
+
+.tophs
+{
+	    border:inline;
+        border-style:none;
+        overflow:hidden;
+        background-color:#eeffff;
+        height:60px;
+    }
+.footer {
+   position: relative;
+   border-size:200px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2c3e50;
+   text-align: center;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+  color:white;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+p{
+	color:white;
+	font-size:14px;
+}
+span{
+	font-size:14px;
+}
+.top{
+	background-image:url("1.jpg");
+	border-style-left:groove;
+	border-style-right:groove;
+	height:70px;
+	width:100%;
+}
+.de{
+    border-style:inset;
+    position:relative;
+    top:-150px;
+    left:620px;
+    width:270px;
+    height:200px;
+    padding:2% 3% 2% 3%;
+}
+</style>
+<div class="top">
+	
+</div>
+ 	<div class="toph">
+ 		<div id="sideb" class="bar">
+ 			<a href="javascript:void(0)" class="icon" onclick="hidecont()">&times;</a>
+ 			<a href="home.html">Home</a><br/>
+ 			<a href="symp.html">Symptom Checker</a></br>
+ 			<a href="about.html">About</a><br/>
+ 			<a href="privacy.html">Privacy</a><br/>
+ 			<a href="contact.html">Contact</a><br/>
+ 	</div>
+ 		<span class="movesi" onclick="showcont()">&#9776;&nbsp&nbsp&nbsp Menu </span>
+ 		<span class="titl"><a href="home.html">Gyromed</a></span>
+ 		<button class="log" value="Logout">Logout</button>            
+ 	</div>
+ 	<div>
+ 		 <script type="text/javascript">
+          var symp=new Array();
+          var addi;
+          var symplist=new Array("MY SYMPTOMS");
+    </script>
+    <div class="row">
+  <div class=".col-md-6">
+    <div class="panel panel-default">
+    <div class="bs-example">
+        <p class="som">Add more symptoms</p>
+        <input type="text" name="typeahead" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="Type your main symptom here" id="sod" ><br/><br/>
+              <button class="button" onclick="shi()">ADD</button>
+                <div class="de" id="demm"><br/></div>
+                <form action="selectdisease.php" method="post">
+                  <div class="hidd">
+                  <input type="hidden" name="sympquery" id="ad"><br/></div>
+                  <input class="but" type="submit" value="Check for diseases" onclick="addit()">
+                </form>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  <script>
+
+function shi() {
+  symplist.push(document.getElementById("sod").value)
+  var tempp=document.getElementById("sod").value.replace(" ","");
+  symp.push(tempp);
+  document.getElementById("demm").innerHTML = symplist ;
+
+  
+  
+}
+function addit(){
+  addi=symp.join("='yes' OR ");
+  addi=addi+"='yes'";
+  document.getElementById("ad").value=addi;
+}
+
+</script>
+ 		
+ 	</div>
+
+<footer class="footer">  
+  <div class="container text-center">
+    <p>Need more help?</br>
+      contact us at(+919999988888)</p>
+
+     <span style="color:white">copyright &copy med services 2019 &nbsp&nbsp&nbsp&nbsp Follow us on...</span> 
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+   </footer> 
+<script>
+function showcont()
+    {
+         document.getElementById("sideb").style.width="250px";
+    }
+function hidecont()
+    {
+         document.getElementById("sideb").style.width="0px";
+    }
+</script>
+ </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <title>
+      Gyromed
+ 	 </title>
+  <src type="text/css" rel="stulesheet" hreftype="home.css">
+  <meta name="keyword" conent="">
+  <meta name="viewport" content="width-device-width" initial-scale="1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ </head>
+ <body>
+<style>
+body
+{
+  background-color:#eeffff;
+  background-position:fixed;
+}
+div a{
+     text-decoration:none;
+ }
+div a:hover{
+     background-color:rgb(180,180,180);
+     text-decoration:none;
+ }
+div a:active{
+     background-color:#3bc371;
+}
+
+.log{
+	position: relative;
+	left:1220px;
+	top:14px;
+	font-size:20px;
+	color:#00b3b3;
+  background-color:#b3ffff;
+  border:none;
+}
+.titl a{
+	   position:relative;
+	   left:600px;
+	   top:14px;
+	   color:#00b3b3;
+	   font-size:25px;
+}
+.title a:hover{
+
+}
+.movesi{
+	cursor: pointer;
+	position:relative;
+	top:14px;
+	left:14px;
+	font-size:20px;
+    color:#00b3b3;
+}
+.icon{
+	  position:absolute;
+	  top:0;
+	  right:25px;
+	  font-size:30px;
+	  margin-left:50px;
+}
+.bar{
+    display:flex;
+    flex-direction:column;
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color:#f4f7f6;
+	overflow-x:hidden;
+	padding-top:60px ;
+	transition:0.5s;
+	border:inline;
+        font-size:18px;
+}
+
+.toph
+{
+	border:inline;
+        border-style:none;
+        overflow:hidden;
+        background-color:#b3ffff;
+        height:60px;
+    }
+.footer {
+   position: fixed;
+   border-size:200px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2c3e50;
+   text-align: center;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+  color:white;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+p{
+	color:white;
+	font-size:14px;
+}
+span{
+	color:white;
+	font-size:14px;
+}
+.top{
+	background-image:url("1.jpg");
+	border-style-left:groove;
+	border-style-right:groove;
+	height:70px;
+	width:100%;
+}
+.cont{
+  border-style:groove;
+  height:400px;
+  width:50%;
+  margin:4% 0 0% 24%;
+  padding:2% 0% 0% 5%;
+}
+.cont a{
+  font-size:25px;
+}
+.locate{
+        border-right: groove;
+        border-bottom:groove;
+        width:44%;
+        height:120px;
+}
+.call{
+        border-bottom:groove;
+        width:44%;
+        height:120px;
+        position:relative;
+        top:-120px;
+        left:44%;
+        padding-left:2%;
+}
+.som{
+  position:relative;
+  top:-70px;
+  left:90px;
+  color:black;
+}
+.locat{
+  border-right:groove;
+  position:relative;
+  top:-241px;
+  width:44%;
+}
+.cal{
+  width:44%;
+        height:120px;
+        position:relative;
+        top:-120px;
+        left:44%;
+        padding-left:2%;
+
+}
+.fa-home{
+  font-size:25px;
+  position:relative;
+  left:40px;
+  top:15px;
+
+}
+</style>
+<div class="top">
+
+</div>
+ 	<div class="toph">
+ 		<div id="sideb" class="bar">
+ 			<a href="javascript:void(0)" class="icon" onclick="hidecont()">&times;</a>
+ 			<a href="home.html">Home</a><br/>
+ 			<a href="symp.html">Symptom Checker</a><br/>
+ 			<a href="about.html">About</a><br/>
+ 			<a href="privacy.html">Privacy</a><br/>
+ 			<a href="contact.html">Contact</a><br/>
+ 		
+ 		</div>
+ 		<span class="movesi" onclick="showcont()">&#9776;&nbsp&nbsp&nbsp Menu </span>
+    <span><a href="home.html"><i class="fa fa-home"></i></a></span>
+ 		<span class="titl"><a href="home.html">Gyromed</a></span>
+ 		<button class="log" value="Logout">Logout</button>
+
+ 		</ul>
+                  
+ 	</div>
+  <div class="cont">
+    <a href="contact.html">Contact us</a><br/><br/>
+    <div class="locate">
+          <i class="large material-icons" style="font-size:80px">local_parking</i>
+          <p class="som" style="font-size:25px">
+             <b>TEAM<br/>
+             PREDATORS</b>
+          </p>
+    </div>
+    <div class="call">
+          <i class="large material-icons" style="font-size:80px">call</i>
+          <p class="som">
+             <b>Mobile no:</b>(+91)7898567865,(+91)7895678434<br/>
+             <b>Phone no:</b>0535-8784248
+          </p>
+    </div>
+    <div class="cal">
+          <i class="large material-icons" style="font-size:80px">email</i>
+          <p class="som">
+             <b>Email id:</b>gyromeds@gmail.com</br>
+             <b>Email id:</b>gyroforum@gmail.com
+          </p>
+    </div>
+    <div class="locat">
+          <i class="large material-icons" style="font-size:80px">location_on</i>
+          <p class="som">
+             Room no-333,SVBH,MNNIT Campus,Teliarganj,Allahabad,</br>Uttar Pradesh,211004
+          </p>
+    </div>
+  </div>
+<footer class="footer">  
+  <div class="container text-center">
+    <p>Need more help?</br>
+      contact us at(+919999988888)</p>
+
+     <span>copyright &copy med services 2019 &nbsp&nbsp&nbsp&nbsp Follow us on...</span> 
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+   </footer>
+<script>
+function showcont()
+    {
+         document.getElementById("sideb").style.width="250px";
+    }
+function hidecont()
+    {
+         document.getElementById("sideb").style.width="0px";
+    }
+</script>
+ </body>
+</html>

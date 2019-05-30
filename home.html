@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	 <title>Gyromed
+ 	 </title>
+  <src type="text/css" rel="stulesheet" hreftype="home.css">
+  <meta name="keyword" conent="">
+  <meta name="viewport" content="width-device-width" initial-scale="1">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Made with WOW Slider - Create beautiful, responsive image sliders in a few clicks. Awesome skins and animations. Bootstrap slideshow" />
+  
+  <!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+ </head>
+ <body>
+<style>
+body
+{
+  background-color:#eeffff;
+  background-position:fixed;
+}
+div a{
+     text-decoration:none;
+ }
+div a:hover{
+     background-color:rgb(180,180,180);
+     text-decoration:none;
+ }
+div a:active{
+     background-color:#3bc371;
+}
+.log{
+  position: relative;
+  left:1220px;
+  top:14px;
+  font-size:20px;
+  color:#00b3b3;
+  background-color:#b3ffff;
+  border:none;
+}
+.titl a{
+	   position:relative;
+	   left:600px;
+	   top:14px;
+	   color:#00b3b3;
+	   font-size:25px;
+}
+.title a:hover{
+
+}
+.movesi{
+	cursor: pointer;
+	position:relative;
+	top:14px;
+	left:14px;
+	font-size:20px;
+  color:#00b3b3;
+}
+.icon{
+	  position:absolute;
+	  top:0;
+	  right:25px;
+	  font-size:30px;
+	  margin-left:50px;
+}
+.bar{
+    display:flex;
+    flex-direction:column;
+	height:100%;
+	width:0;
+	position:fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color:#f4f7f6;
+	overflow-x:hidden;
+	padding-top:60px ;
+	transition:0.5s;
+	border:inline;
+  font-size:18px;
+}
+
+.toph
+{
+	border:inline;
+        border-style:none;
+        overflow:hidden;
+        background-color:#b3ffff;
+        height:60px;
+    }
+.footer {
+   position: fixed;
+   border-size:200px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2c3e50;
+   text-align: center;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  border-right: 1px solid #70726F;
+  transition: all .5s ease;
+  color:white;
+}
+.footer a:first-child {
+  border-left: 1px solid #70726F;
+}
+.footer a:hover {
+  color: white;
+}
+p{
+	color:white;
+	font-size:14px;
+}
+span{
+	color:white;
+	font-size:14px;
+}
+.top{
+	background-image:url("1.jpg");
+	border-style-left:groove;
+	border-style-right:groove;
+	height:70px;
+	width:100%;
+}
+.about{
+  border-style:inset;
+  line-height: 22px;
+  font-family:Arial,Helvetica,sans-serif;
+  margin:5% 15% 5% 15%;
+  padding:2% 5% 2% 5%;
+}
+.fa-home{
+  font-size:25px;
+  position:relative;
+  left:40px;
+  top:15px;
+}
+</style>
+<div class="top">
+
+</div>
+ 	<div class="toph">
+ 		<div id="sideb" class="bar">
+ 			<a href="javascript:void(0)" class="icon" onclick="hidecont()">&times;</a>
+ 			<a href="home.html">Home</a><br/>
+ 			<a href="symp.html">Symptom Checker</a><br/>
+ 			<a href="about.html">About</a><br/>
+ 			<a href="privacy.html">Privacy</a><br/>
+ 			<a href="contact.html">Contact</a><br/>
+ 		</div>
+ 		<span class="movesi" onclick="showcont()">&#9776;&nbsp&nbsp&nbsp Menu </span>
+    <span><a href="home.html"><i class="fa fa-home"></i></a></span>
+ 		<span class="titl"><a href="home.html">Gyromed</a></span>
+ 		<button class="log" value="Logout">Logout</button>
+                  
+ 	</div>
+ <div id="wowslider-container1">
+  <div class="ws_images"><ul>
+    <li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+    <li><img src="data1/images/health.jpg" alt="health" title="health" id="wows1_1"/></li>
+    <li><a href="http://wowslider.net"><img src="data1/images/medicalwallpapers2.jpg" alt="css image gallery" title="Medical-Wallpapers-2" id="wows1_2"/></a></li>
+    <li><img src="data1/images/136934.jpg" alt="136934" title="136934" id="wows1_3"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+    <a href="#" title="health"><span><img src="data1/tooltips/health.jpg" alt="health"/>2</span></a>
+    <a href="#" title="Medical-Wallpapers-2"><span><img src="data1/tooltips/medicalwallpapers2.jpg" alt="Medical-Wallpapers-2"/>3</span></a>
+    <a href="#" title="136934"><span><img src="data1/tooltips/136934.jpg" alt="136934"/>4</span></a>
+  </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">bootstrap slideshow</a> by WOWSlider.com v8.8</div>
+  <div class="ws_shadow"></div>
+  </div>  
+  <script type="text/javascript" src="engine1/wowslider.js"></script>
+  <script type="text/javascript" src="engine1/script.js"></script>
+ <footer class="footer">  
+  <div class="container text-center">
+    <p>Need more help?</br>
+      contact us at(+919999988888)</p>
+
+     <span>copyright &copy med services 2019 &nbsp&nbsp&nbsp&nbsp Follow us on...</span> 
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-google-plus"></i></a>
+    <a href="#"><i class="fa fa-skype"></i></a>
+  </div>
+   </footer> 
+
+<script>
+function showcont()
+    {
+         document.getElementById("sideb").style.width="250px";
+    }
+function hidecont()
+    {
+         document.getElementById("sideb").style.width="0px";
+    }
+</script>
+ </body>
+</html>
